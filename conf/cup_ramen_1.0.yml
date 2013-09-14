@@ -1,0 +1,13 @@
+- name: カップヌードル
+  images:
+    - http://www.nissinfoods.co.jp/img/r_image.imgs?id=2849&tp=3&s=290
+- name: カップヌードル カレー
+  images:
+    - http://www.nissinfoods.co.jp/img/r_image.imgs?id=2850&tp=3&s=290
+- name: 赤いきつね
+  images:
+    - http://www.maruchan.co.jp/aka-midori/lineup/img/lower/photo_aka01.jpg
+- name: 緑のたぬき
+  images:
+    - http://www.maruchan.co.jp/aka-midori/lineup/img/lower/photo_midori01.jpg
+

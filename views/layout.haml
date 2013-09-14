@@ -1,0 +1,15 @@
+!!! XHTML
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'UTF-8'}
+    %title= @title
+    %script{:type => 'text/javascript', :src => "http://code.jquery.com/jquery-1.10.2.min.js"}
+  %body
+    != yield
+    %hr
+    %div#footer
+      %ul
+        %li
+          %div 好きな方（または、引き分け、どうでもいい）をクリックで選択してください。
+        %li
+          %div 結果へのリンクを生成して、SNSなどに貼ることができます。

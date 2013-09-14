@@ -1,0 +1,23 @@
+%script{ src: javascript_path('index') }
+:javascript
+  var api_lists = "#{app_root}/api/lists.json";
+%div#header
+  %h1
+    %a{ href: app_root } ＊＊＊ ソート
+%div#main
+  %div
+    %table#main_table{ align: 'center', style: 'border: 1px solid #000; border-collapse: collapse', cellpadding: 3 }
+      %tr{ style: 'border: 1px solid #000; border-collapse: collapse' }
+        %td{ align: 'center', colspan: 3, style: 'border: 1px solid #000; border-collapse: collapse' }
+          %div#match_no
+          %div#progress
+      %tr{ align: 'center', style: 'border: 1px solid #000; border-collapse: collapse' }
+        %td#table_left{ rowspan: 2, width: 250, style: 'border: 1px solid #000; border-collapse: collapse' }
+          %div#image_left
+          %div#label_left
+        %td#draw{ height: 125 } 引き分け
+        %td#table_right{ rowspan: 2, width: 250, style: 'border: 1px solid #000; border-collapse: collapse' }
+          %div#image_right
+          %div#label_right
+      %tr{ align: 'center', style: 'border: 1px solid #000; border-collapse: collapse' }
+        %td#no_interest{ height: 125 } どうでもいい

@@ -1,0 +1,14 @@
+%script{ src: javascript_path('result') }
+:javascript
+  var api_result = "#{app_root}/api/result.json";
+  var api_shorten_url = "#{app_root}/api/shorten_url.json";
+%div#header
+  %h1
+    %a{ href: app_root } ＊＊＊ ソート
+%div#main
+  %div#shorten_url{ :align => 'center' } 結果のURL:　
+  %div
+    %table#main_table{ :align => 'center', style: 'border: 1px solid #000; border-collapse: collapse', cellpadding: 3 }
+      %tr
+        %th{ style: 'color: #fff; background-color: #000' } 順位
+        %th{ style: 'color: #fff; background-color: #000' } 名前
